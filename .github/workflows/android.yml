@@ -11,6 +11,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      HAXELIB_ROOT: ${{ github.workspace }}/haxelib
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
